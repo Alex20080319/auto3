@@ -1,0 +1,93 @@
+/* Alap stílusok */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #030303;
+    margin: 0;
+    padding: 0;
+    background-image: url('fotó.pjg'); /* Cseréld ki 'kép_útvonala.jpg' a tényleges kép elérési útvonalára */
+    background-size: cover; /* Vagy 'contain', ha a teljes képet szeretnéd megjeleníteni */
+    background-repeat: no-repeat; /* Ne ismétlődjön */
+    background-position: center; /* Középre igazítva */
+  }
+  
+  h2 {
+    color: #f3e8e8;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Navigáció */
+  .navbar {
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #000000 !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link:hover {
+    color: #ffc107 !important;
+  }
+  
+  /* Kártyák */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-body {
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .table {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+  
+  th {
+    color: #555;
+  }
+  
+  td {
+    color: #777;
+  }
+  
+  /* Reszponzív beállítások */
+  @media (max-width: 768px) {
+    .card-img-top {
+      height: 150px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .navbar {
+      text-align: center;
+    }
+  }
